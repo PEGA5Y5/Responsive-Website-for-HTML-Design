@@ -27,6 +27,18 @@ ul {
     color: #ffffff;
 }
 
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+.dark-2 {
+    padding: 15px;
+    background-color: #cccccc;
+    color: #35424a;
+}
+
 /* Header */
 header {
     background-color: #35424a;
@@ -133,6 +145,35 @@ header a:hover {
     width: 90px;
 }
 
+/* about-us */
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+article#main-col {
+    float: left;
+    width: 65%;
+    margin-top: 10px;
+}
+
+article#main-col h1.page-title {
+    font-size: 26px;
+}
+
+/* Services */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #ffffff solid 1px;
+    background: #e6e6e6;
+}
 
 footer {
     padding: 20px;
@@ -140,4 +181,38 @@ footer {
     color: #ffffff;
     background-color: #e8491d;
     text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form, 
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input,.quote div textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
