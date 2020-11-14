@@ -198,12 +198,21 @@ footer {
         width: 100%;
     }
 
+    header nav li {
+        display: block;
+        padding: 0 0 10px 0;
+    }
+
     header {
         padding-bottom: 20px;
     }
 
     #showcase h1 {
         margin-top: 40px;
+    }
+
+    #showcase div.container {
+        width: 100%;
     }
 
     #newsletter button, .quote button {
